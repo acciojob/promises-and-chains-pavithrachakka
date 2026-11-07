@@ -19,10 +19,10 @@ btn.addEventListener('click',function(){
 		},4000);
 	});
 	promise
-		.then((name)=>{
+		.then(()=>{
 			alert(`Welcome,${name}.You can vote.`);
 		})
-	.catch((name)=>{
+	.catch(()=>{
 		alert(`oh sorry ${name}. You aren,t old enough.`);
 	});
 });
