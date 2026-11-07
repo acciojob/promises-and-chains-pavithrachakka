@@ -12,9 +12,9 @@ btn.addEventListener('click',function(){
 	const promise=new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			if (age>18){
-				resolve(name);
+				resolve();
 			}else{
-				return(name);
+				return();
 			}
 		},4000);
 	});
