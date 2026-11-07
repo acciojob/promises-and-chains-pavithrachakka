@@ -9,12 +9,13 @@ btn.addEventListener('click',function(){
 		alert("Please enter valid details.");
 		return;
 	}
+	if(age&&name){
 	const promise=new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 			if (age>18){
 				resolve();
-			}else{
-				return();
+			}if(age<18){
+				reject();
 			}
 		},4000);
 	});
@@ -25,4 +26,5 @@ btn.addEventListener('click',function(){
 	.catch(()=>{
 		alert(`oh sorry ${name}. You aren,t old enough.`);
 	});
+	}
 });
